@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="humburger">
+            <i class="fa-solid fa-bars-staggered"  data-visible="true"></i>
+            <i class="fa-solid fa-xmark"  data-visible="false"></i>
+        </div>
+      <nav class="container navbar">
+       
+        <img src="./images//logo.png" alt="logo" class="logo">
+        <img src="./images//logo 2.png" alt="logo" class="mobile-logo">
+        <ul class="nav-links"  data-visible="false">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <button class="btn">Contact Me</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="hero ">
+            <div class="bg-img">
+                <img src="./images/bg.png" alt="">
+            </div>
+            <div class="hero-top container">
+                
+                <div class="content">
+                    
+                    <div class="info">
+                        <h1>Hi, I am</h1>
+                        
+                        <h2>Shiinedev</h2>
+                       <h6>Front-end Developer </h6>
+                    </div>
+                    <div class="contact-me">
+                        <a href="https://api.whatsapp.com/send/?phone=252619171882&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                       <a href="#"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                        <a href="https://github.com/shiinedev" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                    </div>
+                    
+                </div>
+                
+                <div class="person-img">
+                    <img src="./images/person.png" alt="person">
+                </div>
+            </div>
+        </section>
+        <section class="BERRIES">
+            <h4>IT BERRIES</h4>
+            <p>
+                Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut <br>
+                ac est. Morbi commodo, eros in dignissim tempus, lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet <br>
+                 elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut ante justo, consequat vitae elementum tempor, accumsan nec <br>
+                  eros. 
+            </p>
+            <span>READ MORE</span>
+
+        </section>
+    </main>
+
+    <script>
+        let navbar=document.querySelector(".nav-links")
+        let humbergur=document.querySelector(".humburger")
+        let icons=document.querySelectorAll("i")
+    
+        humbergur.addEventListener('click', function(event){
+           let isvible=navbar.getAttribute('data-visible');
+            if(isvible == 'true'){
+                navbar.setAttribute('data-visible','false');
+                icons[0].setAttribute('data-visible','true');
+                icons[1].setAttribute('data-visible','false')
+            }
+            else
+            {
+                navbar.setAttribute('data-visible','true');
+                icons[0].setAttribute('data-visible','false');
+                icons[1].setAttribute('data-visible','true')
+            }
+        })
+    </script>
+</body>
+</html>
