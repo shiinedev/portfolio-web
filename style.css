@@ -218,7 +218,67 @@ header {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    align-items: center;
 }
+.grid-item img{
+    width: 90px;
+    height: 100px;
+}
+.portfolio{
+    margin-top: 8.875rem;
+    display: flex;
+    flex-direction: column;
+}
+.header-img{
+    height: 10rem;
+    background: url(./images/Section\ Header.png) center / cover  no-repeat;
+}
+.grid-header{
+    background-color: #1c1918;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#d7d7d7;
+}
+.grid-header .info{
+    display: flex;
+    padding-bottom: .2rem;
+    gap: 3rem;
+    border-bottom: 1px solid #fff;
+  
+}
+.grid-header .info p{
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+.grid-port{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.grid-port .grid-col{
+    height: 20.0625rem;
+}
+.grid-port .col1{
+    background:url(./images/Project.png) center / cover  no-repeat; ;
+}
+.grid-port .col2{
+    background:url(./images/Rectangle\ 17.png) center / cover  no-repeat; ;
+}
+.grid-port .col3{
+    background:url(./images/Project\ \(1\).png) center / cover  no-repeat; ;
+}
+.grid-port .col4{
+    background:url(./images/Project\ \(2\).png) center / cover  no-repeat; ;
+}
+.grid-port .col5{
+    background:url(./images/Project\ \(3\).png) center / cover  no-repeat; ;
+}
+.grid-port .col6{
+    background:url(./images/Project.png) center / cover  no-repeat; ;
+}
+
 @media (max-width: 768px){
     header{
         margin-top: 0;
@@ -298,12 +358,18 @@ header {
     .grid-skills{
         grid-template-columns: repeat(2,1fr);
     }
+    .grid-port{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media (max-width: 480px){
     .grid-about{
         grid-template-columns: 1fr;
     }
     .grid-skills{
+        grid-template-columns: 1fr;
+    }
+    .grid-port{
         grid-template-columns: 1fr;
     }
 }
