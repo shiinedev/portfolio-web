@@ -55,6 +55,7 @@ header {
     line-height: 1rem;
 }
 .nav-links .btn{
+    text-decoration: none;
     background-color: #fff;
     color: black;
     border: none;
@@ -309,6 +310,37 @@ form button{
 }
 form #comment{
     height: 100px;
+}
+footer a{
+    text-decoration: none;
+    color:#fff;
+}
+footer{
+    margin-top: 3rem;
+    background-color: #1c1918;
+    color: #fff;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.footer-info p{
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    color: #d7d7d7;
 }
 @media (max-width: 768px){
     header{
